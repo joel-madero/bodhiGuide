@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi Guide to Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+    </head>
+    <body>
+
+<div id="content">
+
+	<div id="maincontent">
+<h1 id="the_bodhi_guide_to_enlightenment_-_compositing">The Bodhi Guide to Enlightenment - Compositing</h1>
+<hr>
+
+
+<p>
+
+<strong>Compositing</strong> is a feature which adds extra “eye-candy” for your desktop. There are 2 methods to achieve  <strong>Compositing</strong> in the <strong>Bodhi Linux Enlightenment (E17)</strong> window manager. This article will explain what <strong>Compositing</strong> is and does, and describe the two methods for utilizing it in <strong>E17</strong>. 
+
+
+
+</p>
+
+
+<h3 id="what_is_compositing">What is Compositing?</h3>
+
+
+<p>
+
+It may be useful to start with the definition of the root word “composite” from <a href="http://www.thefreedictionary.com/composite" class="urlextern" target="_blank" title="http://www.thefreedictionary.com/composite" rel="nofollow"> The Free Dictionary</a> online:
+</p>
+<pre class="code">Made up of distinct components; compound.</pre>
+
+<p>
+This applies to a window manager in the sense that disparate visual elements can be combined to create a variety of visual effects. These include (but are not limited to): transparency, 3D effects, bending, scaling, and rotation. 
+</p>
+
+<p>
+There is a thorough article of the history and implementation of <strong>Compositing</strong> on <a href="http://en.wikipedia.org/wiki/Compositing_window_manager" target="_blank" title="http://en.wikipedia.org/wiki/Compositing_window_manager" rel="nofollow"> Wikipedia</a> for readers who are interested. 
+</p>
+
+
+<h3 id="default_compositing">Default Compositing</h3>
+
+
+<p>
+There is an <strong>E17</strong> <a href="modules.html">Module</a> for <strong>Compositing</strong> that is installed by default in <strong>Bodhi Linux</strong>. It is named, strangely, <strong>Composite</strong>. <br />The only <a href="profiles.html"> Profile</a> it is <em>loaded</em> in by default is the <strong>Compositing Profile</strong>, though it can be added to any. Simply go to <em>Main Menu → Settings → Modules</em> and you will find it under the <em>Look</em> tab.
+
+
+
+</p>
+
+<p>
+This <strong>Compositing</strong> does two primary things. The first is to allow transparent/opaque window effects. In general this will be applied to inactive/non-focused windows. In the screenshot below you can see that Midori is not the focused window and the desktop background can be partially seen through it (the tree and the moon). 
+</p>
+
+<p>
+Also, <u>some</u> applications (terminal apps notably, but not all of them) also support transparency while active/focused. The screenshot also shows LXTerminal running and focused but you are still able to see the Midori window behind it and the desktop. The “depth” of the transparency in such a application will be set in that application&#039;s preferences (location of which will vary by application) and <strong>not</strong> in some general <strong>Compositing</strong> setting.
+
+<p>Note that in <u>some</u> <strong>Themes</strong> a <strong>Composite</strong> setting will need to be switched to active transparency. Go to <em>Main Menu -> Settings -> All -> Look -> Composite</em>. In the lower part of the window, with the <em>Default</em> tab activated, switch to the "Still" setting, click <em>Apply</em> then <em>OK</em>
+
+
+
+</p>
+
+<center><img src="../images/transparent-desktop.png" width="800"></center>
+
+<p>
+The other effect, which can&#039;t be captured in a screenshot, is causing windows to be “bouncy” when switching. This gives a nice visual cue about which window you have switched to when multiple windows are open. 
+</p>
+
+<h3>Getting Rid of "Bouncy" Windows</h3>
+<p>
+Many users like the general effects of Compositing while at the same time disliking the “bouncy” effect that occurs when switching windows.
+
+<p>
+To disable this effect, go to Main Menu → Settings → All → Look → Compositing.
+
+<center><img src="../images/disable_bouncy.png"></center>
+
+In the lower part of the window, select anything OTHER than <em>default</em>, click <em>Apply</em> and you will no longer have “bouncy” windows.
+<br><br>
+
+<h3 id="ecomorph">Ecomorph</h3>
+
+
+<p>
+<strong>Ecomorph</strong> is an <strong>E17</strong> port of the popular compositing manager <strong>Compiz</strong>. Since <strong>Ecomorph</strong> is not part of the standard <strong>Bodhi Linux</strong> installation, and because it causes problems on some hardware configurations, this article will only cover the basics of getting <strong>Ecomorph</strong> installed and running. 
+
+
+
+</p>
+
+<p>
+<strong>Ecomorph</strong> is an <strong>E17</strong> <a href="modules.html">Module</a>. It can be installed with the graphical <strong>Synatic Package Manager</strong> or by issuing the command:
+</p>
+<pre class="code">sudo apt-get install ecomorph</pre>
+
+<p>
+After it is installed, the <strong>Ecomorph Module</strong> must be loaded; go to <em>Main Menu → Settings → Modules</em>, highlight <em>Ecomorph</em> then hit the <em>Load</em> button.
+</p>
+
+<p>
+Once the <strong>Module</strong> is loaded you will need to start an <strong>Ecomorph</strong> session. Log out of <strong>E17</strong> (<em>Main Menu → System → Log Out</em>) and when logging in again choose <em>E17 - Ecomorph</em> from the <em>Desktop</em> menu in the lower left. This will remain the default <em>Desktop</em> until you explicitly change it once again.
+
+
+
+</p>
+
+<p>
+There is a <em>tremendous</em> amount of configuration options available under <em>Main Menu → Settings → Ecomorph</em>.
+</p>
+
+<center><img src="../images/ecomorph_config.png" width="800"></center>
+
+<p>
+Since there are <em>so</em> many options for <strong>Ecomorph</strong> configuration and that it is not a part of the standard <strong>Bodhi Linux</strong> installation this guide will not go through the many various options. Users who are interested in more information on setting up <strong>Ecomorph</strong> are recommended to read the relevant section in the <a href="http://pclosmag.com/html/Issues/201103/page09.html" target="_blank" title="http://pclosmag.com/html/Issues/201103/page09.html" rel="nofollow"> PCLinuxOS Guide</a> (an internet connection is required for this link)
+
+
+
+</p>
+<hr />
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Prev:</a></td>
+<td align="center" width="33%"> Contents:</td>
+<td align="right" width=33%">Next:</td>
+
+</tr>
+<tr>
+<td align="left" width="33%"><a href="everything.html">Everything Module</a></td>
+
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="key_bindings.html">Key Bindings</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi Guide to Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1>The Bodhi Guide to Enlightenment<br>
+Everything Module</h1>
+<br>
+<ol>
+<li><a href="#How to Run Everything">How to Run Everything</a></li>
+<li><a href="#Everything Does Anything">Everything Does Anything</a></li>
+<li><a href="#Plugins">Plugins<a/></li>
+<li><a href="#Beyond Everything">Beyond Everything</a></li>
+
+<li><a href="#Keyboard Navigation">Keyboard Navigation</a></li>
+</ol>
+<br>
+<p>
+When the <strong>Enlightenment (E17)</strong> developers hatched this <a href="modules.html">Module</a>, they tried to find a name to describe what it does. All they could think of was <strong>Everything</strong>.
+<p>
+In a very small nutshell, <strong>Everything</strong> is a fully-indexed database of all the applications and files on your PC.
+
+
+<center><a href="../images/evry.png"><img src="../images/evry.png"></a></center>
+<p>
+Other operating systems have similar features. Windows has "Desktop Search". Mac OS X has "Spotlight". If you have been following Linux you are likely familiar with "Gnome-Do". What sets <strong>Everything</strong> apart is its plugin architecture that allows it to go beyond simply finding applications and files.
+
+<h2> <a name="How to Run Everything">How to Run Everything</a> </h2>
+<p>
+<strong>Everything</strong> is quite sophisticated. Not only because of all it can do, but how easily you can do it. The default <strong>E17</strong> method of opening <strong>Everything</strong> is to press <em>Alt+Esc</em>. Then simply start typing what you want to do. As you type, <strong>Everything</strong> will start showing suggestions of what it thinks you want to do. When you see what you want, you can select it and press <em>Enter</em> or double-click it. If you change your mind and want to exit <strong>Everything</strong>, simply press <em>Esc</em> or click somewhere outside the <strong>Everything</strong> window.
+
+<p>
+By default, <strong>Bodhi Linux</strong> also provides <em>Win+Space</em> as a shortcut to <strong>Everything</strong> and you can also access it from the Main Menu, <em>Main Menu -> Run Everything</em>.
+<p>
+<strong>Everything</strong> also adapts to your computing habits. Every time you use <strong>Everything</strong> it keeps track of what you do most frequently. Over time your more commonly used files, applications, etc. appear with fewer keystrokes. For example, when you first use <strong>Everything</strong> and simply enter the letter <code>L</code> , you will see several applications in some order such as <strong>Leafpad</strong>, <strong>LXAppearance</strong>, <strong>LXTerminal</strong>, and so on. Now suppose you kept going and typed <code>LXTerminal</code> , and launched it. After doing this a few times, you will only have to type <code>L</code>  and <strong>LXTerminal</strong> will show first. 
+
+
+<h2> <a name="Everything Does Anything">Everything Does Anything</a> </h2>
+
+Suppose you have a custom bash script called <code>myscript</code> , and you want to edit it. You fire up <strong>Everything</strong> and type <code>myscript</code> . Now when you select it, how is <strong>Everything</strong> supposed to know whether you want to edit it or run it? 
+
+<p>
+If you look at the top of the <strong>Everything</strong> window, you will see two tabs. The first one is the default view that lists the possible matches to your query. The second one is contextual and can change depending on what is selected. It typically shows the various <em>Actions</em> you can perform with the selected item.
+<p>
+Back to our <code>myscript</code>  example, if you click on the second tab, you will see a list of possible things you can do with your script such as <em>Open with...</em> or <em>Copy to..</em>. It might also list a text editor like <em>Leafpad</em> and an option to <em>Run in Terminal</em>. Choose <em>Leafpad</em> and your script will open for editing.
+
+<p>
+The icing on the cake is that just as <strong>Everything</strong> keeps track of what you select most frequently, it also remembers what you do with them most frequently. So next time, you type <code>myscript</code>  into <strong>Everything</strong> the first <em>Action</em> it chooses will likely be to open it in <strong>Leafpad</strong>.
+
+<h2> <a name="Plugins">Plugins</a> </h2>
+
+<p>
+As mentioned before, one of <strong>Everything's</strong> most powerful features is its plugin architecture. Everything you see in <strong>Everything</strong> is the result of some plugin. The more commonly used and understood ones are <strong>Applications</strong>, <strong>Files</strong>, and <strong>Recent Files</strong>. If you open <strong>Everything Settings</strong> at <em>Main Menu -> Settings -> All -> Launcher -> Everything Configuration</em>, and choose the <em>Plugins</em> tab, you will see that there are three types of plugins: <em>Subject, Action, </em>and <em>Object</em>. 
+
+
+<center><a href="../images/e17-guide-everything-settings-plugins.png"><img src="../images/e17-guide-everything-settings-plugins.png"></a></center>
+<p>
+These are organized by the tabs you see at the top of the <strong>Everything</strong> window. The first tab shows the results from the applicable <em>Subject</em> plugins. The second tab shows any applicable <em>Action</em> plugins, things you can do with the selected <em>Subject</em>. If needed, there will be a third tab that shows the applicable <em>Object</em> plugins, what to perform the selected <em>Action</em> on. (For example, if you select the <em>Copy To...</em> <em>Action</em>, it needs to know where to copy to.) The smaller text in the upper right corner of each tab shows what plugin is generating the current result.
+
+<center><a href="../images/e17-guide-everything-window-top-tabs.png"><img src="../images/e17-guide-everything-window-top-tabs.png"></a></center>
+<p>
+Along the bottom of the <strong>Everything</strong> window you can see more tabs showing the available plugins for each type: <em>Subject, Action,</em> or <em>Object</em>. They are also contextual based on what is currently selected. By default, every option from every plugin is shown. The tabs listed at the bottom allow you to filter the choices by plugin.
+
+<center><a href="../images/e17-guide-everything-window-bottom-tabs.png"><img src="../images/e17-guide-everything-window-bottom-tabs.png"></a></center>
+
+<h3> Default Plugins </h3>
+<p>
+<table border="1" cellpadding="5">
+<tr>
+<td><h3>Plugin</h3></td>
+<td><h3>Description</h3></td>
+</tr>
+<tr>
+<td>Applications</td>
+<td>As mentioned before, one of the most commonly used and understood plugins is the Applications plugin. This plugin is what allows <strong>Everything</strong> to launch an application.</td>
+
+</tr>
+<tr>
+<td>Files/Recent Files</td>
+<td>Also commonly used plugins that lets <strong>Everything</strong> find files and browse the directories on your filesystem.</td>
+</tr>
+<tr>
+<td>Windows</td>
+<td>Plugin which allows you to manipulate open windows.</td>
+</tr>
+<tr>
+
+<td>Settings</td>
+<td>Plugin to find various settings dialogs for E17.</td>
+</tr>
+<tr>
+<td>Exebuf</td>
+<td>Plugin to run CLI commands.</td> 
+</tr>
+<tr>
+<td>Text</td>
+<td>Simple plugin to copy snippets of text to the clipboard.</td>
+</tr>
+
+<tr>
+<td>Plugins</td> 
+<td>A plugin to access plugins!</td>
+</tr>
+</table>
+
+<br>
+<h3> As an application launcher </h3>
+
+In the screenshot above, the user has "raised" Everything by entering the <em>key binding</em> (keyboard shortcut) <strong>Alt+Esc</strong> or <strong>Win+Space</strong>. Next, the user entered "E".</em>
+
+Just entering "E" causes <strong>Everything</strong> to search its history-sorted database for the most frequently-used applications starting with that letter. It finds several, the first nine of which are displayed with their icons in a grid.
+
+But, if the user follows the "E" with a "v", so the command line at the upper left contains "Ev" - the scope of possibilities reduces, so the most probable intended application becomes "Everything Configuration", which is highlighted. Once an application is highlighted, it can be launched simply by double-clicking the icon or by pressing the Return key. Try it!
+
+
+<br><br>
+<h2> <a name="Beyond Everything">Beyond Everything</a> </h2>
+<p>
+The above plugins are the standard ones that come with <strong>Everything</strong>. You can install additional plugins to enhance the functionality of <strong>Everything</strong>. Below are a few examples.
+
+<h3> Calculator </h3>
+
+<p>
+The calculator plugin allows <strong>Everything</strong> to perform the basic functions of a calculator. You will likely see the plugin is already installed. However, the backend it uses is <code>bc</code> , a GNU arbitrary precision calculator language, that is not installed by default in <strong>Bodhi Linux</strong>. Install <code>bc</code> via <strong>Synaptic</strong> or 
+<p><code>sudo apt-get install bc</code>
+
+<p>Then open <strong>Everything</strong> and press <code>=</code> to trigger the calculator plugin. Type <code>=1+2</code>  and you will see <code>3</code>  listed in the <em>Subject</em> tab.
+
+
+
+<h3> Search the Web </h3>
+<p>
+
+The <strong>websearch</strong> plugin is actually a collection of plugins that allow you to quickly search the internet. Instead of opening your browser, going to Google, clicking the search box, and entering your search term; run <strong>Everything</strong> then enter 
+<p><code>g (search phrase)</code> 
+<p>and press <em>Enter</em>. Your browser will automatically open and show the result of your Google search.
+
+<p>Need to quickly bring up the YouTube video of 'Keyboard Cat'? No problem, open <strong>Everything</strong>, enter 
+<p><code>y keyboard cat</code>
+
+<p>and press <em>Enter</em>.
+
+<p>You can similarly do Wikipedia searches using the trigger <code>w</code> , and Google translations with the trigger <code>t</code> .
+
+<p>To install the <strong>websearch</strong> plugin, search for <code>everything-websearch</code>  in <strong>Synaptic</strong> or use
+
+<p><code>sudo apt-get install everything-websearch</code></p>
+<p>Do not forget to load the module after installing.
+
+<h2> <a name="Keyboard Navigation">Keyboard Navigation</a> </h2>
+
+<p>While you can use your mouse to navigate through <strong>Everything</strong>, <strong>Everything</strong> was designed with the keyboard jockey in mind. Here are the basics.
+<p>
+<table border="1" cellpadding="5">
+<tr>
+
+<td><h3>Keys</h3></td>
+<td><h3>Action</h3></td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>Cycle through top tabs (<em>Subject, Action, Object</em>)</td>
+</tr>
+<tr>
+<td>up/down/left/right</td>
+<td>Move through possible choices</td>
+</tr>
+
+<tr>
+<td>Enter</td>
+<td>Select item/action</td>
+</tr>
+<tr>
+<td>Ctrl+left/right</td>
+<td>Move through bottom tabs (plugin filters)</td>
+</tr>
+</table>
+
+<p>If reaching for the arrow keys is appalling to you, there are two options, Vi based (default) and Emacs based, which can be set in <strong>Everything Settings</strong> for faster navigation. 
+
+
+<p>
+<table border="1" cellpadding="5">
+<tr>
+<td><h3>Vi</h3></td>
+<td><h3>Emacs</h3></td>
+<td><h3>Action</h3></td>
+</tr>
+<tr>
+<td>Alt+h</td>
+<td>Alt+b</td>
+<td>Move left</td>
+
+</tr>
+<tr>
+<td>Alt+j</td>
+<td>Alt+n</td> 
+<td>Move down</td>
+</tr>
+<tr>
+<td>Alt+k</td> 
+<td>Alt+p</td> 
+<td>Move up</td>
+</tr>
+
+<tr>
+<td>Alt+l</td> 
+<td>Alt+f</td> 
+<td>Move right</td>
+</tr>
+<tr>
+<td>Alt+i</td>
+<td>Alt+i</td> 
+<td>Cycle through top tabs (<em>Subject, Action, Object</em>)</td>
+</tr>
+<tr>
+
+<td>Alt+Shift+n</td>
+<td>Alt+Shift+f</td> 
+<td>Next plugin filter</td> 
+</tr>
+<tr>
+<td>Alt+Shift+p</td>
+<td>Alt+Shift+b</td> 
+<td>Previous plugin filter</td> 
+</tr>
+</table>
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Prev:</a></td>
+<td align="center" width="33%"> Contents:</td>
+<td align="right" width=33%">Next:</td>
+</tr>
+<tr>
+<td align="left" width="33%"><a href="profiles.html">Profiles</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+
+<td align="right" width="33%"><a href="compositing.html">Compositing</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>

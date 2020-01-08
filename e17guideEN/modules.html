@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi Guide to Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1>The Bodhi Guide to Enlightenment<br>
+Modules</h1>
+
+<hr>
+
+<p>This page explains in some detail what <strong>Enlightenment (E17) Modules</strong> are, how they are related to <a href="gadgets.html">Gadgets</a>, how to load <strong>Modules</strong> from disk storage, and how to find <strong>Modules</strong> in the <strong>Bodhi Linux</strong> repository.
+
+
+<h2>What is a Module?</h2>
+<p>A <strong>Module</strong> is a small <strong>E17</strong> program that can be used to extend the functionality of your desktop. They can be installed to the PC and <em>loaded</em> into RAM at runtime. By not <em>loading</em> all its <strong>Modules</strong> by default, <strong>E17</strong> minimizes the amount of RAM being used at any given time. The more <strong>Modules</strong> you <em>load</em>, the more RAM will be occupied. On PCs with 512 MB of RAM or less, this is an important consideration. But due to the efficiency of the <strong>Enlightenment Foundation Libraries (EFL)</strong>, each <strong>Module</strong> takes up very little additional memory. Many <strong>Modules</strong>, once <em>loaded</em> into RAM, provide access to <strong>Gadgets</strong> that can be placed on the desktop or on a <a href="shelves.html">Shelf</a>. 
+
+
+<h2>How to load Modules</h2>
+<p>Go to <em>Menu -> Settings -> Modules</em> and the <strong>Module Settings</strong> dialogue appears:
+
+<br>
+<img src="../images/modules.png">
+<br>
+
+<p>Notice the tabs at the top. There are <strong>Modules</strong> for <strong>Utility, System, Look</strong> and so on. In the screenshot above, the <strong>Forecasts</strong> module shows with a green light to its right (this is the indicator in the default <a href="profiles.html">Profile</a>; other <strong>Profiles</strong> may have different indicators), meaning it is already <em>loaded</em>. There is a brief description of what the <strong>Module</strong> does in the window at the bottom. You have the option of <em>unloading</em> it to save memory or reduce the clutter on your desktop. The next <strong>Module</strong> listed, <strong>IBox</strong>, is not <em>loaded</em>. If you click on the <strong>IBox</strong> line, the <em>Load</em> button will become highlighted. The scrollbar at the right lets you scroll down the list to see other <strong>Modules</strong> on the disk and their status - either <em>loaded</em> into RAM or ready to be <em>loaded</em>.
+
+
+<h2>Modules and Gadgets</h2>
+
+<p>Many of the <strong>Modules</strong> provide <strong>Gadgets</strong> that can be added to your desktop or on a <strong>Shelf</strong>. Some, like <strong>Forecasts</strong>, can only be displayed on the desktop, while others like  <strong>Systray</strong> can only be displayed on a <strong>Shelf</strong>. Several <strong>Modules</strong> exist to only provide a single <strong>Gadget</strong> such as <strong>Clock</strong>. Typically, it's not enough to load a <strong>Module</strong> into RAM, because <strong>E17</strong> lets you choose where to display a <em>loaded</em> <strong>Module's Gadgets</strong>. Please see the <a href="gadgets.html">Gadgets</a> and/or the <a href="shelves.html">Shelves</a> section for details on placing a <strong>Gadget</strong> in one or the other location.
+
+
+<h2>Installed Modules</h2>
+<p>Please see the <a href="module_reference.html">Module Reference</a> page for a list of all <strong>Modules</strong> installed by default. 
+
+<h2>Downloading Modules</h2>
+<p>Many <strong>Modules</strong>, such as <strong>Forecasts</strong>, are not included in the <strong>Bodhi Linux</strong> installation CD in order to keep it within size limits, in accordance with the <strong>Bodhi Linux</strong> philosophy. <strong>Modules</strong> that are not installed by default can be found in the <strong>Bodhi Linux</strong> software repository via <strong>Synaptic Package Manger</strong> in <em>Main Menu -> Applications -> Preferences</em>. They can be installed like any other Linux program. Besides <strong>Forecasts</strong>, check out the following useful Enlightenment <strong>Modules</strong> that are not installed by default:
+
+
+<ul>
+  <li>cpu</li>
+  <li>ecomorph</li>
+  <li>forecasts</li>
+  <li>mail</li>
+  <li>mem</li>
+  <li>news</li>
+
+  <li>photo</li>
+</ul>
+
+<p>Search for "enlightenment module" in the <em>Quick Search</em> box of <strong>Synaptic</strong> to find any others.
+
+<p>For a complete list of available <strong>Modules</strong> see the <a href="module_reference.html">Module Reference</a>. 
+
+
+<h2>Deleting a Module</h2>
+<p>
+Because of the nature of <strong>Modules</strong> it is not strictly necessary to delete/uninstall them. As long as they are not <em>loaded</em> they will not be using any system resources (RAM for example) but only a small amount of disk space.
+<p>
+If you do find it necessary to completely remove one (or more) however, simply uninstall it in <strong>Synaptic Package Manager</strong> like any other other application or use the command: 
+<pre class="code">sudo apt-get remove [module-name]</pre>
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Prev:</a></td>
+<td align="center" width="33%"> Contents:</td>
+<td align="right" width=33%">Next:</td>
+</tr>
+<tr>
+<td align="left" width="33%"><a href="virtual_desktops.html">Virtual Desktops</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+
+<td align="right" width="33%"><a href="module_reference.html">Module Reference</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>
+

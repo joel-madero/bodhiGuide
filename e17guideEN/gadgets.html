@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi Guide to Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> The Bodhi Guide to Enlightenment<br>Gadgets</h1>
+<hr>
+
+<p>
+This article explains what <strong>Enlightenment (E17) Gadgets</strong> are, describes some useful <strong>Gadgets</strong>, shows how to add new <strong>Gadgets</strong> from <strong>E17</strong>'s repertoiry, and briefly notes how <strong>Gadgets</strong> relate to <a href="modules.html">Modules</a> (which are the subject of a separate section of this guide).
+
+
+
+<h2>What are Gadgets?</h2>
+<p>
+In <strong>E17</strong>, a <strong>Gadget</strong> is just about anything you see on the desktop. <strong>Gadgets</strong> are what other operating systems call "Applets" or "Widgets". Small programs that do one thing and do it well. Some provide specific information about your PC or your environment. Several <strong>Gadgets</strong> are probably already on your default <strong>Bodhi Linux</strong> desktop, depending on which <a href="profiles.html">Profile</a> you selected when you installed <strong>Bodhi Linux</strong>.
+
+
+<p>
+Note that most <strong>Gadgets</strong> can be placed either directly on the desktop or onto a <a href="shelves.html">Shelf</a>. There are a few <strong>Gadgets</strong> (like <em>Systray</em>) that can <strong>only</strong> be placed on a <strong>Shelf</strong>.
+
+
+<h2>Examples of Gadgets</h2>
+
+<table border="1" cellpadding="10">
+<tr>
+<td style="vertical-align:middle">Calendar <br>(A graphic calendar)</td>
+<td><a href="../images/calendar.png"><img src="../images/calendar.png" width="50"></a></td>
+</tr>
+<tr>
+<td style="vertical-align:middle">Clock <br>(An analogue clock)</td>
+<td><a href="../images/clock.png"><img src="../images/clock.png" width="50"></a></td>
+</tr>
+<tr>
+
+<td style="vertical-align:middle">Forecasts <br>(A graphic display of the weather in a given region)</td>
+<td><a href="../images/forecasts.png"><img src="../images/forecasts.png" width="75"></a></td>
+</tr>
+<td style="vertical-align:middle">Pager <br>(A Virtual desktop switcher)</td>
+<td><a href="../images/pager.png"><img src="../images/pager.png" width="50"></a>
+</table>
+
+
+<br><br>
+<h2>Gadgets Displayed by Default per Profile</h2>
+<p>Depending on which <strong>Profile</strong> you chose, a certain number of <strong>Gadgets</strong> were added by default:<br>
+
+<table border="1" cellpadding="5">
+<tr><td><h3>Bare</td><td><h3>Compositing</td><td><h3>Desktop</td><td><h3>Fancy</td><td><h3>Laptop</td><td><h3>Tablet**</td><td><h3>Tiling</td></tr>
+<tr><td>Places</td><td>Start</td><td>Start</td><td>Calendar</td><td>Cpufreq</td><td>Bodhi Close</td><td>Places</td></tr>
+<tr><td>Clock</td><td>IBar</td><td>Ibar</td><td>Places</td><td>Places</td><td>IBox</td><td>Mixer</td></tr>
+
+<tr><td>Settings</td><td>IBox</td><td>Clock</td><td>Taskbar</td><td>Taskbar</td><td>IBar</td><td>Pager</td></tr>
+<tr><td>Everything Starter</td><td>Clock</td><td>Pager</td><td>Mixer</td><td>Mixer</td><td>Places</td><td>Clock</td></tr>
+<tr><td>Shot*</td><td>Pager</td><td>Mixer</td><td>Pager</td><td>Pager</td><td>Mixer</td><td>IBar</td></tr>
+
+<tr><td> </td><td>Mixer</td><td>Taskbar</td><td>Clock</td><td>Battery</td><td>Cpufreq</td><td>Start</td></tr>
+<tr><td> </td><td>Places</td><td>Places</td><td>IBar</td><td>Clock</td><td>Battery</td><td>Settings</td></tr>
+<tr><td> </td><td>Scale Windows</td><td>Settings</td><td>Settings</td><td>Start</td><td>Illume-Home-Toggle</td><td>Everything Starter</td></tr>
+
+<tr><td> </td><td>Scale all Windows</td><td>Everything Starter</td><td>Everything Starter</td><td>Settings</td><td>Illume-Keyboard-Toggle</td><td>Shot*</td></tr>
+<tr><td> </td><td>Scale Pager</td><td>Shot*</td><td>Shot*</td><td>Everything Starter</td><td>Illume-Mode-Toggle</td><td></td></tr>
+<tr><td> </td><td>Settings</td><td> </td><td> </td><td>Shot*</td><td>Clock</td><td></td></tr>
+
+<tr><td> </td><td>Everything Starter</td><td> </td><td> </td><td></td><td>Settings</td><td></td></tr>
+<tr><td> </td><td>Shot*</td><td> </td><td> </td><td></td><td>Start</td><td></td></tr>
+<tr><td> </td><td></td><td> </td><td> </td><td></td><td>Everything Starter</td><td></td></tr>
+
+<tr><td> </td><td></td><td> </td><td> </td><td></td><td>Shot*</td><td></td></tr>
+
+</table>
+
+* <em>Shot</em> is not a <strong>Gadget</strong> in the typical sense, but has an entry in the <em>Main Menu</em>.
+
+<p>**The <strong>Tablet Profile</strong> does not have the<strong> Gadget Module</strong> loaded by default.
+
+
+<h2>Adding New Gadgets</h2>
+
+<p>In order to add <strong>Gadgets</strong> to the desktop, go to <em>Main Menu -> Settings -> Gadgets</em> and the <strong>Gadgets Manager</strong> will open. Select a <strong>Gadget</strong> in the list, and press <em>Add Gadget</em>. The <strong>Gadget</strong> appears at the top left of the desktop with a blue crosshatching, indicating it can be moved and resized to your requirements. When the <strong>Gadget</strong> is in the proper place, <em>right-click</em> the <strong>Gadget</strong> to lock it.
+
+
+
+<br><center><img src="../images/gadget-move.png"></center>
+
+<h2>Gadget Settings</h2>
+
+<p>Once they are placed on the desktop or on a <strong>Shelf</strong>, each <strong>Gadget</strong> can be <em>right-clicked</em> to configure its appearance and its behavior. For example, when you first install the <em>Forecasts</em> <strong>Gadget</strong>, it gives you the weather for Sofia, Bulgaria. Probably not what you want, unless, of course, you live there. So <em>right-click</em> it, open the menu <em>Gadget Forecasts -> Forecasts Settings</em>. In the dialog box that appears, you will see instructions for finding and entering the code for your city.
+
+
+
+<h2>Add a Gadget to a Shelf</h2>
+
+<p>Adding a <strong>Gadget</strong> to a <strong>Shelf</strong> requires a slightly different procedure. See the <a href="shelves.html">Shelves Section</a> of this Guide for details.
+
+<h2>Gadgets Need Their Modules</h2>
+
+<p>What <strong>Gadgets</strong> you have available to add is determined by what <strong>Modules</strong> you have <em>Loaded</em>. <em>Loading</em> a <strong>Module</strong> reads it from disk storage and places it in RAM, but it won't be displayed on screen until you add it as a <strong>Gadget</strong> to the desktop or a <strong>Shelf</strong>. To <em>Load/Unload</em> <strong>Modules</strong> go to <em>Main Menu -> Settings -> Modules</em>. See the <a href="modules.html">Modules Section</a> of this Guide for more details.
+
+
+<h2>Still more Gadgets</h2>
+
+<p>To keep the initial download and installation of <strong>Bodhi Linux</strong> as compact as possible, some excellent <strong>Modules</strong> were not included, but can be downloaded and installed via the <strong>Synaptic Package Manager</strong> just like other Linux programs. 
+
+<p>For a full list of available <strong>Gadgets</strong> check the <a href="module_reference.html">Module Reference</a>.
+
+
+<p>See the <a href="modules.html">Modules Section</a>  of this Guide for more details.
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Prev:</a></td>
+<td align="center" width="33%"> Contents:</td>
+<td align="right" width=33%">Next:</td>
+</tr>
+<tr>
+
+<td align="left" width="33%"><a href="shelves.html">Shelves</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="profiles.html">Profiles</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>

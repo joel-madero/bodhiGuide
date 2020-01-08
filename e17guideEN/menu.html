@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi Guide to Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> The Bodhi Guide to Enlightenment<br>Main Menu</h1>
+<hr>
+
+This is a beginners Introduction to <strong>Bodhi Linux's</strong> Menus, it was created and tested for versions of <strong>Bodhi Linux</strong> 1.0.0 through 1.2.0.
+
+    <ol>
+<li><a href="#Introduction">Introduction</a></li>
+
+<li><a href="#Where Did It Go?">Where Did it Go?</a></li>
+<li><a href="#Menu Structure">Menu Structure</a></li>
+<li><a href="#Favorite Applications">Favorite Applications</a></li>
+<li><a href="#Customizing Bodhi Linux's Menu">Customizing Bodhi Linux's Menu</a></li>
+<ol>
+    <li><a href="#Adding an Application">Adding an Application</a></li>
+    <li><a href="#Removing an Application">Removing an Application</a></li>
+</ol>
+<li><a href="#Enlightenment's Menu Settings">Enlightenment's Menu Settings</a></li>
+
+<li><a href="#Further Information">Further Information</a></li>
+</ol>
+
+<h2><a name="Introduction">Introduction</a></h2>
+
+<p>The <strong>Menu</strong> is a ubiquitous part of modern Graphical Operating systems and is commonly accessed by clicking a button or icon on a panel or taskbar. The infamous windows Start button, for example.
+
+<p><strong>Enlightenment (E17)</strong> provides this common user interface through the use of a <strong>Start <a href="gadgets.html"></strong>Gadget</a> which can be placed anywhere on the desktop - usually it is placed on a <a href="shelves.html">Shelf.</a> Most of the <a href="profiles.html">Profiles</a> installed with <strong>Bodhi Linux</strong> include a <em>”Start Button”</em> and in most of the <a href="themes.html">Themes</a> it looks like a <strong>Bodhi Linux</strong> leaf.
+
+
+<p>However, it is possible to remove the <strong>Start</strong> button. This may seem an odd thing to do to people unfamiliar with <strong>E17</strong>. But fear not, this does not remove the menu, merely its button. <strong>E17</strong>'s menus can be displayed by clicking on any unoccupied spot on the desktop. Note that <strong>E17</strong> has two menus. The <strong>Menu</strong> found by clicking a <strong>Start</strong> button or left clicking any blank spot on <strong>Bodhi Linux</strong>'s desktop is known as the <strong>Main Menu</strong>. Whereas, the menu displayed by right clicking on an unoccupied spot on the desktop is the <a href="#Favorite Applications">Favorites Menu</a>. On a default installation of <strong>Bodhi Linux</strong>, the <strong>Favorites Menu</strong> is empty but as we shall see it is easy to add your own favorite applications to this menu.
+
+
+<p><img src="../images/shortcut-menu-key.png" align="right">In addition to accessing <strong>E17's Main Menu</strong> from either the <strong>Start</strong> button or from the left-click on the desktop, in <strong>Bodhi Linux</strong> there is a default <a href="key_bindings.html">key-binding</a> to open the <strong>Main Menu</strong> from the keyboard. It's the Menu key! On most keyboards this key is to the right of the spacebar near the <em>Alt</em> and <em>Ctrl</em> keys and looks like the image to the right. Naturally this keyboard shortcut can be changed by the user or deleted altogether.
+
+
+<h2><a name="Where Did It Go?">Where Did it Go?</a></h2>
+
+<p>A minor digression on using <strong>E17's Menu</strong> that may confuse some new users of <strong>Bodhi Linux</strong>. As you scroll down the <strong>Main Menu</strong> list, the sub-menu entries always open to the right of the menu. Ordinarily this is not a problem, but what if you open the <strong>Main Menu</strong> close to right edge of the screen? In that case the sub-menu may open and be partially or totally offscreen. It appears to be a quirk with <strong>E17</strong>'s menu implementation, but that thought is a bit hasty. In this case you merely have to move the mouse cursor to the right and the whole menu structure moves to left revealing the hidden sub-menu items. As programmers are fond of saying, ”It is not a bug, it is a feature.” Another example of the elegance and beauty of <strong>Enlightenment</strong>.
+
+
+<h2><a name="Menu Structure">Menu Structure</a></h2>
+
+<p>This section is a brief description of the structure of <strong>Bodhi Linux's Main Menu</strong>, although truthfully the best way to gain familiarity with the menu is to open it up and explore it. But nonetheless, the <strong>Main Menu</strong> in a default installation of <strong>Bodhi Linux</strong> lists, from top to bottom:<br>
+
+<img src="../images/bodhi_menu.png" align="right">
+<ul>
+    <li><h6>Applications</h6>Contains most of the GUI applications installed on your system, arranged in sub menus based upon categories. Command line Applications will not be displayed in the Applications Menu. They can, however, be added.</li>
+<br />
+    <li><h6>Places</h6>In a default installation of <strong>Bodhi Linux, Places</strong> allows you to open the Home folder, the Trash folder, and the (root) File system as well as mounted file systems and the default file manager's Bookmarks. <strong>Places</strong> is actually a <a href="modules.html">Module</a> and can be unloaded in which case it will disappear from the menu. You can also change the default settings of the <strong>Places Module</strong>. To do so from the <strong>Main Menu</strong> go to <em>Settings → All → Files → Places</em>. This will open a <strong>Places Settings</strong> dialog window where you can adjust Places to display or not to display the following: Home, Desktop, Trash, File system, Temp, and Favorites. You also have an option to not to display Places altogether in the <strong>Main Menu</strong>.</li>
+<br />
+    <li><h6>Run everything</h6>Launches the <a href="everything.html">Run Everything</a> Application.</li>
+<br />    
+    <li><h6>Desktop</h6>Allows an easy switch to any <a href="virtual_desktops.html">virtual desktop</a> as well as fast access to <strong>Virtual Desktops Settings</strong> and <strong>Shelves Settings</strong>. You also have the option to show or hide all open windows on the current Desktop.</li>
+<br />
+    <li><h6>Windows</h6>Allows fast access to any open window, an option to clean up windows, and an option to find lost windows.</li>
+<br />    
+    <li><h6>Bodhi Linux</h6>Here you will find <strong>Bodhi Linux's</strong> extension to the <strong>E17's Main Menu</strong>. There are four sections:</li>
+        <ul>
+	<li><h7>About</h7><br />Opens the <strong>About Bodhi Linux</strong> window.</li>
+
+        <li><h7>Quick Start</h7><br /> Opens a locally stored <a href="http://www.bodhilinux.com/quickstart/quickstartEN/">Quick Start</a> web page in the default web browser.</li>
+
+        <li><h7>Add Software</h7><br /> Opens the <a href="http://appcenter.bodhilinux.com/">Bodhi Linux AppCenter</a> web page in the default web browser. Here you can easily and conveniently install useful applications and more.</li>
+
+        <li><h7>Artwork</h7><br /> Opens the <a href="http://www.bodhilinux.com/art/doku.php">Bodhi Art</a> web page where you can get some extra eye candy for your desktop. Most of the artwork contributors on this page are users of <strong>Bodhi Linux</strong> rather than professional graphic artists.</li></ul>
+<br />
+    <li><h6>Enlightenment</h6></li>
+	<ul>
+        <li><h7>About</h7><br />Opens the <strong>About Enlightenment</strong> window.</li>
+
+        <li><h7>Theme</h7><br />Opens an <strong>About Theme</strong> window which displays information about the current <strong>E17</strong> theme.</li>
+
+        <li><h7>Restart</h7><br />Choosing this restarts <strong>E17</strong>, sometimes necessary if settings do not seem to take effect or in the rather unlikely event that <strong>E17</strong> seems to not be working correctly.</li>
+
+        <li><h7>Quit</h7><br />Shuts Down <strong>E17</strong>.</li></ul>
+<br />
+    <li><h6>Settings</h6>Opens <strong>E17's Settings Panel.</strong> A tweakers paradise!</li>
+   <br />
+    <li><h6>System</h6>Here are the familiar Shutdown, Reboot, Suspend, Lock, et. al. functions.</li>
+</ul>
+
+<p>It should be further noted that loading certain <strong>Modules</strong> or changing some of <strong>E17's Settings</strong> may add or remove some menu items. Furthermore, adding applications to the <strong>Favorites Menu</strong> will add <strong>Favorite Applications</strong> to the top of the <strong>Main Menu</strong> list, which brings us to our next topic.
+
+
+<h2><a name="Favorite Applications">Favorite Applications</a></h2>
+
+<p>The <strong>Favorites Menu</strong> contains a list of applications to which the user wishes quick access. This list of favorite applications can be found in either <strong>Bodhi Linux's Main Menu</strong> or by right clicking any unoccupied spot on the desktop. On a default installation of <strong>Bodhi Linux</strong>, the <strong>Favorites Menu</strong> will not show up in <strong>Bodhi Linux's Main Menu</strong> nor will the right-click to access the <strong>Favorites Menu</strong> work. This is because no applications have been added to the favorites list by default. 
+
+It is the philosophy of <strong>Bodhi Linux</strong> not to try to second guess what the user wants and to keep things minimal and let the users decide what they want themselves.
+
+<div class="clearfix"></div>
+<img src="../images/fav00.png" align="right"><h3>Adding Lxterminal to Favorites</h3>
+<p>There are two methods of adding an application to the <strong>Favorites Menu</strong>. For the first method, launch the application you wish to add, say Lxterminal. Left click the application's icon in the upper left hand corner choose the app's name and then click <em>Add to Favorites Menu</em> as pictured to the right. Lxterminal will now appear in your <strong>Favorites Menu</strong>. Incredibly simple and truly elegant!
+<br />
+<div class="clearfix"></div>
+<img src="../images/fav02.png" align="left"><p>The second method is not much more difficult. From <strong>Bodhi Linux's Main Menu</strong>, Choose <em>Settings → All → Apps → Favorite Applications</em>. This launches <strong>E17's Favorite Applications</strong> window, under <em>Applications</em> scroll down the list until you find the application you wish to add, click it to highlight it and then click the <em>Add</em> button. A green dot will appear beside the applications name as pictured to the left for PCManFM. (<strong>Note:</strong> the indicator may be something other than a green dot in some <strong>Profiles</strong>) Click <em>Apply</em> and then <em>Ok</em>. The application will now be added to your <strong>Favorites</strong> list and appear in the menu.<br>
+
+<div class="clearfix"></div>
+<img src="../images/fav03.png" align="right"><p>To remove an application from the <strong>Favorites Menu</strong>, launch the <strong>Favorite Applications</strong> window as was done above. Scroll through the application list, noting that applications in the <strong>Favorites Menu</strong> will have a green dot (or other indicator) by their name. Find the application you wish to remove, click it to highlight it and then click the <em>Remove</em> button. The green dot (or other indicator) beside the application's name will disappear. Now click <em>Apply</em> and then <em>Ok</em>. The applications will now be removed from your <strong>Favorites Menu</strong>.
+
+<p>If you are an avid user of the <strong>Favorites Menu</strong> and frequently use a lot of applications, you may find your </strong>Favorites Menu</strong> becomes rather long and you may desire a different order, perhaps placing the apps you access most often at the top of the list. Naturally <strong>E17</strong> provides a means to change the order of the applications in the list. Again launch <strong>E17's Favorite Applications</strong>, only this time click on the <em>Order</em> tab, as pictured to the right. Find the application you wish to move, click it to highlight it. Now click either the <em>Up</em> or <em>Down</em> buttons to position it where you wish it to be in the menu. If desired you can do the same for one or more other applications. Once the order desired is created, click <em>Apply</em> and then <em>Ok</em>.<br>
+<div class="clearfix"></div><br />
+
+<h2><a name="Customizing Bodhi Linux's Menu">Customizing Bodhi Linux's Menu</a></h2>
+
+<p><strong>E17</strong> has a rather unique approach to task of editing, adding or removing menu items. Instead of offering a separate application allowing the user to change menu items, the ability to graphically edit a menu item is incorporated into <strong>E17</strong> itself. To see how let's examine how to add an application to the <strong>Main Menu</strong>.
+
+<h2><a name="Adding an Application">Adding an Application</a></h2>
+
+<p>Sometimes you install an application and it does not appear in the menu, this is probably the result of how the application was packaged. But for the purposes of this guide the examples we will deal with two applications which are already installed in <strong>Bodhi Linux</strong>. These applications are Archive Manager (aka “file-roller”) and xterm. On a default installation of </strong>Bodhi Linux</strong>, neither of these applications appear in the </strong>Main Menu</strong>. The two procedures outlined below for adding these two applications should apply to any application you install but for whatever reason does not install a <strong>Main Menu</strong> application entry.
+
+
+<p>First let's consider Archive Manager. The key here is to launch the application. There are three or more different ways you could do this. One is to use <strong>E17's Run Everything</strong>, another is to launch the app from a terminal and the third is to find the file and launch it by clicking on it.
+
+<p>To illustrate using the <strong>Run Everything</strong> application, first let us launch <strong><a href="everything.html">Run Everything</a></strong>. It can be found in the <strong>Main Menu</strong> or launched by a key board shortcut, <em>Alt-Esc, Ctrl-Alt-Space</em> or <em>Windows-Space</em>. Once it launches start typing Archive Manager and as soon as it is displayed double click the icon to launch it.
+
+
+<center><img src="../images/everything_ar.png"></center>
+
+<p>Once the Archive Manager launches, right-click Archive Manager's Title bar or its icon in the window's upper left-hand corner and choose <em>File-roller → Edit Icon</em>. A <strong>Desktop Entry Editor</strong> window will pop up as pictured below, click on <em>Options</em> and then check <em>Show In Menus</em> and then click <em>Apply</em> and <em>Close</em>. Now the Archive Manager will be in the menu under Accessories.
+
+
+<center><img src="../images/desktopentry0.png"></center>
+
+<p>Now for the second method let's add a menu entry for <strong>xterm</strong>. This method is merely an alternative way to launch the <strong>Desktop Entry Editor</strong> window. In the <strong>Main Menu</strong> choose <em>Settings → All → Apps → Create Launcher</em>. In the <strong>Desktop Entry Editor</strong> window which pops up fill in the following entries:
+
+<ul>
+
+    <li><h6><em>The Basic Tab</em></h6>
+        Name: XTerm<br>
+        Comment: Use the command line<br>
+        Application: xterm</li><br />
+    <li><h6><em>The Icon Tab</em></h6>
+        Icon: terminal</li><br />
+
+    <li><h6><em>The General Tab</em></h6>
+        Generic name: Terminal
+        Categories: GTK;Utility;TerminalEmulator;</li><br />
+    <li><h6><em>The Options Tab</em></h6>
+        Check Show in Menus</li>
+</ul>
+
+<p>When completed, click Apply and Close. Now <strong>xterm</strong> will be in the menu under Accessories.
+
+
+<h2><a name="Removing an Application">Removing an Application</a></h2>
+
+<p>Now that you have seen how to use the <strong>Desktop Entry Editor</strong> it should be obvious how you remove an entry from the menu. Launch the application you wish to remove and then left click its icon in the windows upper left hand corner and choose <em>Application name → Edit Icon</em>. A <strong>Desktop Entry Editor</strong> window will pop up, click on <em>Options</em> and then uncheck <em>Show In Menus</em> and then click <em>Apply</em> and <em>Close</em>. Where naturally, application name is the name of the application you wish to remove and the very first menu entry in the ”left click on the icon” context menu.
+
+
+<h2><a name="Enlightenment's Menu Settings">Enlightenment's Menu Settings</a></h2>
+
+<img align="right" src="../images/e17_menu_settings.png">
+
+<p>There is yet one more tool for altering <strong>Bodhi Linux's Menu</strong> hidden in <strong>E17's Settings</strong> to consider. This is the <strong>Menu Settings</strong> dialog , pictured to the left. To open this window, open the <strong>Main Menu</strong> and then choose <em>Settings → All → Menus → Menu Settings.</em>
+
+<p>The <strong>Menu Settings</strong> window has four tabs: <strong>Menus, Applications, Autoscroll, Miscellaneous,</strong> and will open with the <strong>Menus</strong> tab opened by default. This tab is divided into three subsections:
+<ul>
+    <li><h6>Main Menu</h6> Checking or un-checking an entry here will either display or not display the selected sub-section in the <strong>Main Menu</strong>.</li>
+<br />
+    <li><h6>Applications Display</h6> Checking or un-checking an entry here changes the way an application is displayed in <strong>E17</strong>'s menus. You can choose to display an application's name, its generic name and/or the app's comment. These entries are the same that appear in the <strong>Desktop Entry Editor</strong> and of course can be edited there if need be.</li>
+<br />    
+    <li><h6>Gadgets</h6> This feature is deprecated and makes no difference whether checked or unchecked.</li>
+
+</ul>
+
+
+<p>Note: To ensure that the changes are made after making any changes in the <strong>Menu</strong> tab or any other tab of the <strong>Menu Settings</strong> window, be sure to click <em>Apply</em> or the change will not be made.
+
+<p>Clicking the <strong>Applications</strong> tab in the <strong>Menu Setting</strong> window, allows you to choose what menu source the system uses to display the <strong>Applications sub-menu</strong>. In a default installation of <strong>Bodhi Linux</strong> the choices are <strong>Enlightenment</strong> and <strong>Lxde (Applications)</strong>. There is no difference in the <strong>Application sub-menu</strong> no matter which option you choose.
+
+
+<p>The remaining two tabs, <strong>Autoscroll</strong> and <strong>Miscellaneous</strong> allows you to tweak various aspects of how <strong>E17</strong>'s menus behave. The best way to see what these various settings do is to play with them.
+
+<h2><a name="Further Information">Further Information</a></h2>
+
+<p>Some sub-menu items are sufficiently complex to warrant a separate article describing their use:
+<ul>
+    <li><a href="settings.html">Enlightenment Settings:</a> An in-depth look at all of E17's Settings.</li>
+
+    <li><a href="everything.html">The Everything Module:</a> An examination of the basic usage of the Run Everything Module.</li>
+
+    <li><a href="other_settings.html">LXAppearance:</a> This application controls the look of GTK applications.</li>
+</ul>
+
+A few slightly more advanced topics have not been covered here:
+<ul>
+    <li>Editing or creating .desktop files to launch applications including terminal applications.</li>
+
+    <li>Organizing sub-menus under E17's Main Menu application sub-menu.</li>
+    <li>Maybe more…</li>
+</ul>
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Prev:</a></td>
+<td align="center" width="33%"> Contents:</td>
+
+<td align="right" width=33%">Next:</td>
+</tr>
+<tr>
+<td align="left" width="33%"><a href="intro.html">Introduction</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="virtual_desktops.html">Virtual Desktops</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>
+
+

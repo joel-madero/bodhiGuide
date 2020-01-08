@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi Guide to Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> The Bodhi Guide to Enlightenment<br>Key Bindings </h1>
+<hr>
+
+<ol>
+<li><a href="#Explore Key Binding Settings">Explore Key Binding Settings</a></li>
+<li><a href="#Programming Keys">Programming Keys</a></li>
+<li><a href="#Default Key Bindings">Default Key Bindings</a></li> 
+
+</ol>
+
+
+<p>In <strong>Enlightenment (E17)</strong> parlance, <strong>Key Bindings</strong> refers to <em>Keyboard Shortcuts</em> that you can configure to facilitate navigation and a variety of actions using just the keyboard.
+
+<p>You can even configure a key combination to launch a script or a program.
+
+
+<p><strong>Key Bindings</strong> can be configured under <em>Main Menu -> Settings -> Settings Panel -> Input -> Keys</em>, which opens the <strong>Key Bindings Settings</strong> dialog:
+
+
+
+<p><center><img src="../images/keybindings.png"></center>
+
+
+<p>There are two sections. The left section, <strong>Key Bindings</strong>, lists individual keys and key combinations. The right section, <strong>Action</strong>, lists all of the possible actions that can be triggered. Many keys have been configured by default (see the table at the bottom of this page), but you can change any key's action, and add new key combinations and actions as needed.
+
+<a name="Explore Key Binding Settings"><h2>Explore Key Binding Settings</h2></a>
+
+<p>To get a "feel" for how the <strong>Key Binding Settings</strong> works, click on some of the keys in the <strong>Key Bindings</strong> column, and observe what happens in the <strong>Action</strong> column on the right.
+
+
+<p>For example, on the left, under <strong>Single Key</strong>, there is a key called <em>Menu</em>. Click on that <strong>Key Binding</strong>, and its configured action pops into view on the right, <em>Show Main Menu</em>.
+(The Menu key on many keyboards has a "Menu" symbol, and is located two or three keys to the right of Space).
+
+<p>Other <strong>Single Keys</strong> are listed below <em>Menu</em>. The XF86* series of keys exist on many keyboards for controlling hardware functions like audio volume, screen brightness and so on. Click on <em>XF86AudioMute</em>, for example, and you will see that it maps to the action <em>Mute Volume</em>.
+
+
+<p>Below the Single Keys, the rest of the <strong>Key Bindings</strong> are grouped into categories:
+  <ul>  
+  <li>Shift</li>
+  <li>Ctrl</li>
+  <li>Alt</li>
+  <li>Win (the key with the Windows symbol)</li>
+
+  <li>Ctrl+Shift</li>
+  <li>Alt+Shift</li>
+  <li>Ctrl+Alt</li>
+  </ul>
+ 
+<p>*Note that the above keys and combos (with the exception of the "Win" key) cannot be programmed to produce an action by themselves; they must be paired another keystroke.  
+  
+<p>In each category you see the keys that have already been <strong>bound</strong>, and clicking on each will show its programmed action. For example, under the <strong>Shift</strong> category, the combo <em>Shift+F10</em> is the only <strong>Shift</strong> key combination that has been configured by default. Clicking on <em>Shift+F10</em> in the left column will highlight the action <em>Maximize Vertically</em> in the right column. This action increases the size of the focused window to its maximum height in the vertical direction. Note that there are many other possible key combinations that can be programmed with the Shift key including (but not limited to): Shift + A to Z, 1 to 0, F1 to F9, F11, and F12.
+
+
+<p>In the right column is the full list of available actions. Available actions are dependent on what <a href="modules.html">Modules</a> are loaded and are grouped into categories. The list below is an example of some the common categories:
+<ul>
+  <li>Acpi</li>
+  <li>Calendar</li>
+  <li>Desktop</li>
+  <li>Enlightenment</li>
+
+  <li>Enlightenment Mode</li>
+  <li>Everything Launcher</li>
+  <li>Gadgets</li>
+  <li>Generic: Actions</li>
+  <li>Launch</li>
+  <li>Menu</li>
+
+  <li>Mixer</li>
+  <li>Pager</li>
+  <li>Screen</li>
+  <li>System</li>
+  <li>Window:Actions</li>
+  <li>Window:List</li>
+
+  <li>Window:Moving</li>
+  <li>Window:State</li>
+</ul>
+
+<p>Clicking on any <strong>Action</strong> will <strong>not</strong> show whether there is already a key combination programmed to produce that action. You can consult the table below for the actions that have been pre-programmed in your <strong>Bodhi Linux</strong> installation.
+
+<a name="Programming Keys"><h2>Programming Keys</h2></a>
+
+<p>Let's go through a couple of simple examples that demonstrate how to modify existing <strong>Key Bindings</strong> and add new ones.
+
+<h3>Modify Ctrl+Alt+S</h3>
+
+<p>As shown in the table below, the combination <em>Ctrl+Alt+S</em> is programmed by default to toggle <em>Sticky Mode</em> under the <strong>Window:State</strong> category. You might prefer to use that combination to suspend your computer. The <em>Suspend</em> action is found under the <strong>System</strong> category.
+
+
+<p>In the left column, click on <em>Ctrl+Alt+S</em>. In the right column, click on <em>Suspend</em> under the <strong>System</strong> category, then click <em>OK</em> or <em>Apply</em> at the bottom. Now press <em>Ctrl+Alt+S</em>, and a small window pops up asking if you want to suspend now. Click <em>Yes</em> to suspend or <em>No</em> to cancel.
+
+
+<h3>Switch Key Binding for Maximize Vertically</h3>
+
+<p>Suppose you do not like using <em>Shift+F10</em> for the <em>Maximize Vertically</em> action but would rather use <em>Shift+0</em>. Select <em>Shift+F10</em> in the <strong>Key Bindings</strong> section, then click <em>Modify Binding</em>. A small window pops up asking you to enter a key sequence. Press <em>Shift+0</em>, then <em>OK</em> or <em>Apply</em>. (When you enter the key sequence, you may notice that this will seem to change some other option in the <strong>Key Bindings</strong> list. This is a small bug, but if you close the <strong>Key Binding Settings</strong> dialog and reopen it, you will see the bindings changed correctly.)
+
+
+<p>Note, if you enter an existing <strong>Key Binding</strong> while using the <em>Modify Binding</em> action, it will not change the binding. Instead it will jump to the existing <strong>Key Binding</strong> in the left column.
+
+<h3>Add Alt+L</h3>
+
+<p>Suppose you want to program <em>Alt+L</em>, which is not bound by default, to open <strong>Leafpad</strong>.
+
+
+<p>In the left column, click on <em>Add Binding</em>. A small window pops up asking you to enter the desired key sequence. Press the <em>Alt+L</em> keys together. This will create the binding in the <strong>Key Bindings</strong> section. Be sure you have the <strong>Key Binding</strong> you just created selected, and then in the right column, click on <em>Command</em> in the <strong>Launch</strong> category. Enter <code>leafpad</code> in the <strong>Action Params</strong> section at the bottom of the right column. Click <em>OK</em> or <em>Apply</em>. Now press <em>Alt+L</em>, and you will see the <strong>Leafpad</strong> application open. 
+
+
+<h3>Default Bindings</h3>
+
+<p>If at any point you decide that you have made a mess of your <strong>Key Bindings</strong> and want to go back to the default configuration, simply open the <strong>Key Bindings Settings</strong> dialog and click <em>Restore Default Bindings</em> at the bottom. Click <em>OK</em> or <em>Apply</em> to save them. 
+<br><strong>Important</strong>: This will remove any additional <strong>Key Bindings</strong> you may have set as well.
+
+<a name="Default Key Bindings"><h2>Default Key Bindings</h2></a>
+
+<p>These are the default keyboard shortcuts for <strong>Bodhi Linux</strong> 1.2.0. 
+
+
+<table border="2" cellpadding="5">
+<tr><td><h2>Key Combination</h2>
+<td><h2>Effect</h2>
+</tr>
+ 
+<tr><td colspan="2" halign="center"><h3>Single key</h3></td></tr>
+<tr><td>Menu</td><td>Show Main Menu</td></tr>
+
+ 
+<tr><td colspan="2" halign="center"><h3>Shift</h3></td></tr>
+<tr><td>Shift F10</td><td>Maximize Vertically</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Control</h3></td></tr>
+<tr><td>Ctrl F10</td><td>Maximize Horizontally</td></tr>
+<tr><td>Ctrl Menu</td><td>Show Clients Menu</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Alt</h3></td></tr>
+
+<tr><td>Alt F1</td><td>Switch to Desktop 0</td></tr>
+<tr><td>Alt F2</td><td>Switch to Desktop 1</td></tr>
+<tr><td>Alt F3</td><td>Switch to Desktop 2</td></tr>
+<tr><td>Alt F4</td><td>Switch to Desktop 3</td></tr>
+<tr><td>Alt F5</td><td>Switch to Desktop 4</td></tr>
+<tr><td>Alt F6</td><td>Switch to Desktop 5</td></tr>
+
+<tr><td>Alt F7</td><td>Switch to Desktop 6</td></tr>
+<tr><td>Alt F8</td><td>Switch to Desktop 7</td></tr> 
+<tr><td>Alt F9</td><td>Switch to Desktop 8</td></tr>
+<tr><td>Alt F10</td><td>Switch to Desktop 9</td></tr>
+<tr><td>Alt F11</td><td>Switch to Desktop 10</td></tr>
+<tr><td>Alt F12</td><td>Switch to Desktop 11</td></tr>
+
+<tr><td>Alt Tab</td><td>Next Window</td></tr>
+<tr><td>Alt Menu</td><td>Show Favorites Menu</td></tr> 
+<tr><td>Alt Esc</td><td>Run Everything</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Win</h3></td></tr>
+<tr><td>Win Space</td><td>Run Everything</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Ctrl + Shift</h3></td></tr>
+
+<tr><td>Ctrl Shift F1</td><td>Send Mouse to Screen 0</td></tr>
+<tr><td>Ctrl Shift F2</td><td>Send Mouse to Screen 1</td></tr>
+<tr><td>Ctrl Shift F3</td><td>Send Mouse to Screen 2</td></tr>
+<tr><td>Ctrl Shift F4</td><td>Send Mouse to Screen 3</td></tr>
+<tr><td>Ctrl Shift Left</td><td>Send Mouse Back 1 Screen</td></tr>
+<tr><td>Ctrl Shift Right</td><td>Send Mouse Forward 1 Screen</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Alt + Shift</h3></td></tr>
+<tr><td>Alt Shift Up</td><td>Flip Desktop Up</td></tr>
+<tr><td>Alt Shift Tab</td><td>Previous Window</td></tr>
+<tr><td>Alt Shift Down</td><td>Flip Desktop Down</td></tr>
+<tr><td>Alt Shift Left</td><td>Flip Desktop Left</td></tr>
+<tr><td>Alt Shift Right</td><td>Flip Desktop Right</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Ctrl + Alt</h3></td></tr>
+<tr><td>Ctrl Alt A</td><td>Show Favorites Menu</td></tr>
+<tr><td>Ctrl Alt D</td><td>Show Desktop</td></tr>
+<tr><td>Ctrl Alt F</td><td>Maximize</td></tr>
+<tr><td>Ctrl Alt I</td><td>Iconic Mode Toggle</td></tr>
+<tr><td>Ctrl Alt K</td><td>Kill</td></tr>
+
+<tr><td>Ctrl Alt L</td><td>Lock</td></tr>
+<tr><td>Ctrl Alt M</td><td>Show Main Menu</td></tr>
+<tr><td>Ctrl Alt R</td><td>Shade Up Mode Toggle</td></tr>
+<tr><td>Ctrl Alt S</td><td>Sticky Mode Toggle</td></tr>
+<tr><td>Ctrl Alt W</td><td>Window Menu (brings up menu to max/min etc.)</td></tr>
+<tr><td>Ctrl Alt X</td><td>Close (like Alt F4 in windows)</td></tr>
+
+<tr><td>Ctrl Alt Up</td><td>Raise Window</td></tr>
+<tr><td>Ctrl Alt End</td><td>Restart Enlightenment</td></tr>
+<tr><td>Ctrl Alt Down</td><td>Lower Window</td></tr>
+<tr><td>Ctrl Alt Left</td><td>Flip Desktop Linearly Left</td></tr>
+<tr><td>Ctrl Alt Right</td><td>Flip Desktop Linearly Right</td></tr>
+<tr><td>Ctrl Alt Delete</td><td>System Control (Popup for Shutdown/Logout/Restart etc.)</td></tr>
+
+<tr><td>Ctrl Alt Insert</td><td>Eterm (not installed by default)</td></tr>
+</table>
+
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Prev:</a></td>
+<td align="center" width="33%"> Contents:</td>
+<td align="right" width=33%">Next:</td>
+
+</tr>
+<tr>
+<td align="left" width="33%"><a href="composting.html">Compositing</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="settings.html">Settings</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>
