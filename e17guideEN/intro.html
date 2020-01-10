@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Bodhi Guide to Enlightenment</title>
+        <title>Bodhi Guide to Moksha</title>
         <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
         <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
 
@@ -11,38 +11,67 @@
 <div id="content">
 	<div id="maincontent">
 
-<h1> The Bodhi Guide to Enlightenment<br>Introduction</h1>
+<h1> The Bodhi Guide to Moksha Introduction</h1>
 <hr>
 
-<p>This <em>Bodhi Guide to Enlightenment</em> is intended to be your resource for using <strong>Enlightenment (E17)</strong> and getting the most out of it. New Bodhi Linux users may also want to check out our brief introduction, the <em>Quickstart Guide</em>, which is <a href="http://bodhilinux.com/quickstart/">available online</a> and locally on your system, accessible via the <a href="menu.html">Main Menu.</a></p>
+<p>This <em>Bodhi Guide to Moksha</em> is intended to be your complete resource for using Bodhi Linux with the <strong><a href=https://www.bodhilinux.com/moksha-desktop/">Moksha Window Manager</a></strong>. This guide is intended for <em> everyone </em>, from new Bodhi Linux users to those who hope to join the Bodhi Linux team. 
 
-<p>One of the beauties of a Linux system is the plethora of choices for a Window Manager, and <strong>Bodhi Linux</strong> uses <strong>Enlightenment</strong> as its default. But what exactly is a Window Manager?</p>
 
-<p>According to <a href="http://en.wikipedia.org/wiki/Window_manager">Wikipedia</a>, “A window manager is system software that controls the placement and appearance of windows within a windowing system in a graphical user interface … They work in conjunction with the underlying graphical system which provides required functionality such as support for graphics hardware, pointing devices, and a keyboard, and are often written and created using a widget toolkit.”</p>
+<h2>What is Bodhi Linux</h2>
+Bodhi Linux, in short, is <a href="https://ubuntu.com">Ubuntu LTS</a> (currently 18.04) using Moksha Window Manager, a fork of the <a href="https://www.enlightenment.org">Enlightenment E17</a>. Bodhi was originally developed by a single person, <a href="https://www.jeffhoogland.com">Jeff Hoogland</a>, but has since taken on a life of its own and is being actively developed by several people. 
 
-<p>Basically a Window Manager controls the way you interact with your computer, at least in the Graphical User Interface (GUI). Over time, many Window Managers have been extended to become full-fledged Desktop Environments. A Desktop Environment is generally considered to be a Window Manager that integrates common applications and services, which are often built using the same widget toolkit, into the GUI.</p>
+<center>
+<img src="../images/bodhi-linux-example1.png" alt="Bodhi Example 1" width="350" height="191">
+<img src="../images/bodhi-linux-example2.png" alt="Bodhi Example 2" width="350" height="191">
+<p>
+<img src="../images/bodhi-linux-example3.png" alt="Bodhi Example 3" width="350" height="191">
+</center>
 
-<img src="../images/e17-logo.png" align="left" width="100"><p><strong>Enlightenment</strong> is known as a Window Manager, but provides most of the functionality found in much more resource-hungry Desktop Environments. You could say that it straddles the line between a Window Manager and a Desktop Environment.</p>
+<p>
+<h3>What is a Window Manager</h3>
+<p>According to <a href="http://en.wikipedia.org/wiki/Window_manager">Wikipedia</a>, “[a] window manager is system software that controls the placement and appearance of windows within a windowing system in a graphical user interface … They work in conjunction with the underlying graphical system which provides required functionality such as support for graphics hardware, pointing devices, and a keyboard, and are often written and created using a widget toolkit.”</p> In non-technical terms, the Window Manager is essentially what the end user sees and interacts with, the "GUI" (graphical user interface). Over time, many Window Managers have been extended to become full-fledged Desktop Environments. A Desktop Environment is generally considered to be a Window Manager that integrates common applications and services along with the Window Manager.
 
-<p>The first version of <strong>Enlightenment</strong> was released in 1997. In December 2000 it was completely re-written using the <strong>Enlightenment Foundation Libraries (EFL)</strong>, and remains in active development to this day. The current incarnation of <strong>Enlightenment</strong> is 0.1.7, often referred to simply as <strong>E17</strong>.</p>
 
-<img src="../images/wiki_leaf.png" align="right" width="100"><p>In the Fall of 2010 lead developer Jeff Hoogland began working on the idea of a new Linux distribution utilizing a current and stable version of <strong>Enlightenment</strong> as the Window Manager and with an <strong><a href="http://www.ubuntu.com/">Ubuntu</a> Long Term Support</strong> release as its base. (Note that a completely independent version of <strong>Bodhi Linux</strong> is in the works)
 
-<h2>Enlightenment and Bodhi Linux</h2>
+<p>One exciting part about Linux, and one of the ways it stands out from other operating systems such as Windows and OSX, is that the end user has a plethora of choices for how they can interact with their computer. This is partly, and perhaps most obviously, done through providing various <a href="https://en.wikipedia.org/wiki/Comparison_of_X_window_managers">Window Managers and Desktop Envornments for users to choose from<a>. 
 
-<p><strong>Enlightenment</strong> is the natural choice as a Window Manager in <strong>Bodhi Linux</strong>, as it fits in perfectly with two of the most important <strong>Bodhi Linux</strong> ideals:</p>
+<p>
 
-<ul><li>    <strong>Minimalism</strong> - A default install of Enlightenment will run in less than 100 MB of RAM. That is FAR less than most modern Window Managers, not to mention complete Desktop Environments. But it doesn't come at the expense of great looks or functionality. Enlightenment is one of the most elegant Window Managers available, and is highly extensible through the use of <a href="modules.html">Modules</a>. Which brings us to the second ideal …</li>
-<li>    <strong>User Choice - Enlightenment</strong> is probably the most highly configurable Window Manager in existence, so you can make <em>your</em> system look and work the way <em>you</em> want.
+By default, Ubuntu Linux uses <a href="https://www.gnome.org">Gnome</a>. Although great in many ways, Gnome is not known for being extremely fast, nor is it suited for older machines as it is large and consists of many applications, each with their own long list of dependencies. The current LTS release of Ubuntu <a href="https://ubuntu.com/download/desktop">recommends</a> 4 GB of RAM and 25 GB of free hard drive space. With this large footprint, Ubuntu provides out-of-the-box support for most systems including for most graphics cards, sound cards, and even touch screens, but also brings many additional applications that may be used by some users while never used by others.
+
+<p>
+
+<strong>The goal of Bodhi Linux was and continues to be to bring combine the best parts of Ubuntu with the more streamlined, flexible, fast, and less resource-hungry Window Manager known as "Moksha".</strong> In other words, to bring an elegant Linux distribution at a fraction of the resource use of most other distributions while sacrificing none of the beauty or core functionality of Ubuntu.
+
+<h3>What is Moksha Window Manager</h3>
+Moksha Window Manager is a fork of Enlightenment version 0.1.7 ("E17"). 
+
+<p>
+
+Bodhi Linux was originally built using the <strong>Enlightenment Window Manager</strong>. Although known as a Window Manager, Enlightenment stradles the line between a Window Manager and a Desktop Environment by bringing most of the functionality found in much more resource-hungry Desktop Environments. <p>The first version of <strong>Enlightenment</strong> was released in 1997. In December 2000 it was completely re-written using the <strong>Enlightenment Foundation Libraries (EFL)</strong>, and remains in active development to this day.
+
+For years, E17 was used as the Window Manager of Bodhi Linux. In 2015, founder and lead developer Jeff Hoogland, began a fork of the E17 Window Manager. This fork, specifically designed for Bodhi Linux, became known as "Moksha" (pronounced “mohk-shuh”). <strong>Moksha is Sanskrit in origin just like Bodhi. It means “emancipation, liberation, or release”</strong>
+
+<p>
+
+A full telling of why Moksha Window Manager was developed can be found here: <a href="http://www.bodhilinux.com/2015/04/28/introducing-the-moksha-desktop/">Introducing the Moksha Window Manager</a>.
+
+
+<h2>Enlightenment, Moksha, and Bodhi Linux</h2>
+
+<p><strong>E17</strong> was the natural choice as a Window Manager in <strong>Bodhi Linux</strong>, as it fit in perfectly with two of the most important <strong>Bodhi Linux</strong> ideals:</p>
+
+<ul><li>
+<strong>Minimalism</strong> - A default install of Enlightenment will run on less than 100 MB of RAM. That is <strong><u>far</u></strong> less than most modern Window Managers, not to mention complete Desktop Environments. But it doesn't come at the expense of great looks or functionality. Enlightenment is one of the most elegant Window Managers available, and is highly extensible through the use of <a href="modules.html">Modules</a>.
+</li>
+<li>
+<strong>User Choice:</strong> Enlightenment is probably the most highly configurable Window Manager in existence, so you can make <em>your</em> system look and work the way <em>you</em> want.
 
 </li></ul>
 
-<p>There are other Linux distributions that use <strong>Enlightenment</strong> as their Window Manager, but none (that we know of) deliver such frequent updates, ensuring that you always have the best <strong>Enlightenment</strong> has to offer.</p>
+<p>
 
-<p>Another great advantage of using <strong>Enlightenment</strong> in <strong>Bodhi Linux</strong> is that two active <strong>E17</strong> developers (Stephen “okra” Houston and Christopher “devilhorns” Michael) are also active developers on the <strong>Bodhi Linux</strong> team. This relationship benefits both parties. Any issues that appear in the <strong>E17</strong> version that <strong>Bodhi Linux</strong> is using can be addressed and corrected quickly. And those fixes can then quickly go “upstream” to the main <strong>E17</strong> development and out to the wider <strong>Enlightenment</strong> community as a whole.</p>
-
-<p>We hope you find this guide useful. Feedback is welcome at the <a href="http://www.bodhilinux.com/forums/index.php?/forum/22-documentation/">Bodhi Linux Documentation sub-forum</a> (online link).</p>
-
+Moksha Window Manager was born with these same ideals in mind, taking the best parts of what E17 brought to the table, while fixing, modifying, and expanding on what did not quite fit right with the project. The Moksha development team upstreams patches where appropriate and will always be greatful for the fact that without E17 and its developers, Bodhi Linux and the Moksha Window Manager would never have been possible.
 
 <hr>
 
