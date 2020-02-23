@@ -277,3 +277,18 @@ a.mainlink:hover {
    margin:5px;
    background-color:#ff6600;
 }
+
+/* ----------------------------------------------------------------------------
+ *  ORDERED LISTS
+ * ----------------------------------------------------------------------------
+ */
+
+li {
+    list-style: decimal-leading-zero;
+    font-size: 1.5em;
+    margin: 0 0 0 2em;
+}
+
+li span {
+    font-size: 0.25em;
+}
