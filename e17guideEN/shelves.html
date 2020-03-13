@@ -14,21 +14,41 @@
 <h1> The Bodhi Guide to Enlightenment<br>Shelves</h1>
 <hr>
 
-<strong>Shelves</strong> in <strong>Enlightenment (E17)</strong> are similar to the “Panels” used in other environments like Gnome and KDE. The many uses of shelves will be listed and explained here.
+<strong>Shelves</strong> in <strong>Moksha</strong> are similar to the “Panels” used in other environments like Gnome and KDE. The many uses of shelves will be listed and explained here.
 
-The default <strong>Shelf</strong> will contain different <a href="gadgets.html">Gadgets</a> depending on which <strong>Profile</strong> is selected, but some common ones are: <em>Start</em>, <em>Taskbar</em>, <em>Systray</em>, <em>Clock</em>, and so on. It is possible to add more <strong>Gadgets</strong>. It is also possible to use the panel as a “dock”, with a little help from the <strong>Gadget</strong> named <em>iBar</em>. And it is possible to have more than one <strong>Shelf</strong>.
+The default <strong>Shelf</strong> will contain different <a href="gadgets.html">Gadgets</a> depending on which <strong>Profile</strong> is active, but some common ones are: <em>Start</em>, <em>Taskbar</em>, <em>Systray</em>, <em>Clock</em>, and so on. It is possible to add more <strong>Gadgets</strong>. It is also possible to use the panel as a “dock”, with a little help from the <strong>Gadget</strong> named <em>iBar</em>. And it is possible to have more than one <strong>Shelf</strong>.
 
 
 <img src="../images/e17_panel.png">
 
-<h2> Add a new Shelf</h2>
+<h2> Adding a new Shelf</h2>
 
-To add a new <strong>Shelf</strong>, choose <em>Main Menu -> Desktop -> Shelves -> Add A Shelf</em>. Now a new shelf appears in the bottom right corner.
-
+To add a new <strong>Shelf</strong>, choose <em>Main Menu -> Settings-> Shelves</em>, then press the <em>Add</em> button in the window that appears. You will be asked to provide a name for your new shelf (default is <em>Shelf #n</em>, where <em>n</em> is a number). You will then be given the opportunity to place <strong>gadgets</strong> on the <strong>shelf</strong> and to configure it in other ways, for example to specify whereabouts on the screen you want it to be displayed. Of course you may do that later if you prefer.
 <br><br>
-<h2>Configure the Shelf</h2>
+<h2>Placing gadgets on the shelf</h2>
 
-You can configure the <strong>Shelf</strong> with a graphical user interface: <em>right-click</em> on the <strong>Shelf</strong>, then select <em>Shelf -> Settings</em>.
+When you first create a <strong>Shelf</strong>, it has no <strong>Gadgets</strong> on it. The <em>Shelf Contents</em> dialog will be displayed so that you can choose which <strong>Gadgets</strong> you would like to use.
+
+<br>
+<center><img src="../images/shelf-contents.png"></center>
+<br>
+
+Initially all the <strong>Gadgets</strong> will be shown as inactive. To add a <strong>Gadget</strong>, select it with your mouse and click <em>Add Gadget</em>. The <strong>Gadget</strong> will then be shown as active. Finally click <em>Close</em> to add the active <strong>Gadgets</strong> to your shelf.
+
+Which <strong>Gadgets</strong> are available is controlled by which <a href="modules.html">Modules</a> are loaded, so that section is recommended for reading.
+<p>
+You can add new <strong>Gadgets</strong> at any time by right-clicking on the <strong>Shelf</strong>. This will display the <em>Configuration menu</em>.
+
+<br>
+<center><img src="../images/shelf-configure-menu.png"></center>
+<br>
+The first option contains the name of whatever <strong>gadget</strong> you clicked on. The second contains the name of the <strong>shelf</strong>. Select <em>Shelf -> Contents</em>. Now you can choose any additional <strong>Gadgets</strong> you want on your <strong>Shelf</strong> and click <em>Add Gadget</em>.
+
+To rearrange the <strong>Gadgets</strong> on a shelf, right-click on any <strong>Gadget</strong> and choose the <em>Begin Moving Gadgets</em> option to move and resize them. After doing this you should right-click again and choose the option to lock the <strong>Gadget</strong>'s size and location.
+<br><br>
+<h2>Configuring the Shelf</h2>
+
+You can configure the <strong>Shelf</strong> directly within the graphical user interface at any time: <em>right-click</em> on the <strong>Shelf</strong>, then select <em>Shelf -> Settings</em>.
 
 
 <center><img src="../images/shelf_settings.png"></center>
@@ -55,22 +75,11 @@ Here you can choose the size and design of the <strong>Shelf</strong> and define
 If you want the <strong>Shelf</strong> to hide behind an edge when you don't use it you have to check the option <em>Auto-hide the Shelf</em>. If you do this it is recommended to choose the option <em>Above All</em> at the tab <em>Stacking</em>.
 
 
-<br><br>
-<h2>Gadgets</h2>
-
-Available <strong>Gadgets</strong> are controlled by which <a href="modules.html">Modules</a> are loaded, so those sections are recommended reading.
-<p>
-You can add new <strong>Gadgets</strong> if you <em>right-click</em> on the <strong>Shelf</strong> then select <em>Shelf -> Contents</em>. Now you can choose the <strong>Gadget</strong> you want on your <strong>Shelf</strong> and click <em>Add Gadget</em>.
-
-<br>
-<center><img src="../images/shelf-contents.png"></center>
-<br>
-</em>Right-click</em> on the <strong>Gadget</strong> to change to a mode where you can move and resize it. After doing this you should <em>right-click</em> again and choose the option to lock the <strong>Gadget</strong>'s size and location.
 
 <br><br>
 <h2>Dock via iBar</h2>
 
-You can make a dock out of an <strong>E17</strong> shelf. To do this add the <strong>Gadget</strong> <em>iBar</em> and add new icons to it. A <em>Right-click</em> on the <strong>Gadget</strong> shows the submenu <em>Gadget iBar</em>. There you can add your own app starter via <em>Create new Icon</em> or use predefined app starters with <em>Contents</em>. In <em>Settings</em> and <em>Look</em> you can define its design.
+You can make a dock out of an <strong>Moksha</strong> shelf. To do this add the <strong>Gadget</strong> <em>iBar</em> and add new icons to it. A <em>Right-click</em> on the <strong>Gadget</strong> shows the submenu <em>Gadget iBar</em>. There you can add your own app starter via <em>Create new Icon</em> or use predefined app starters with <em>Contents</em>. In <em>Settings</em> and <em>Look</em> you can define its design.
 
 
 <hr>
